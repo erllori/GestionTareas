@@ -9,23 +9,7 @@
         mc:Ignorable="d"
         Title="Gestió de Tasques" Height="500" Width="800"
         materialDesign:ColorZoneAssist.Mode="PrimaryLight">
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <ListBox x:Name="TasquesListBox"
-                 Margin="10"
-                 ItemsSource="{Binding Tasques}"/>
-
-
-        <Button Content="Afegir Tasca"
-                x:Name="btnAfegir"
-                Grid.Row="1"
-                Style="{StaticResource MaterialDesignRaisedButton}"
-                Click="btnAfegir_Click"
-                Width="150"/>
-    </Grid>
+    
+    
+    
 </Window>
