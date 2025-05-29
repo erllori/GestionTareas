@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace HoresTasques.View
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para wndTasca.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class wndTasca : Window
     {
-        public MainWindow()
+        public wndTasca()
         {
             InitializeComponent();
         }
