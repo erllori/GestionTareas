@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HoresTasques.Services
 {
-    internal class TasquesService
+    internal class TascaService
     {
     }
 }
