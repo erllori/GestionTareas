@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HoresTasques.Model
+namespace HoresTasques.ViewModel
 {
-    internal class TascaModel
+    internal class BaseViewModel
     {
     }
 }
