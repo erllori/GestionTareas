@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HoresTasques.View"
         mc:Ignorable="d"
-        Title="wndTasca" Height="200" Width="400">
+        Title="wndTasca" Height="300" Width="400">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -20,12 +20,14 @@
             <TextBox Text="Nom de la tasca: " x:Name="txtNom" TextAlignment="Right" IsReadOnly="True"/>
             <TextBox Text="Hores invertides: " x:Name="txtHores" TextAlignment="Right" IsReadOnly="True"/>
             <TextBox Text="Data tasca: " x:Name="txtData" TextAlignment="Right" IsReadOnly="True"/>
+            <TextBox Text="Descripcio: " x:Name="txtDesc" TextAlignment="Right" IsReadOnly="True"/>
         </StackPanel>
 
         <StackPanel Margin="5" Grid.Column="1" HorizontalAlignment="Left" Width="189">
             <TextBox x:Name="tbNom" Text="{Binding Nom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             <TextBox x:Name="tbHores" Text="{Binding Hores, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-            <DatePicker x:Name="dpData" SelectedDate="{Binding Data, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedDateFormat="Short"/>
+            <DatePicker x:Name="dpData" SelectedDate="{Binding DataInici, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedDateFormat="Short"/>
+            <TextBox x:Name="tbDesc" Text="{Binding Desc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="100" TextWrapping="Wrap"/>
             <CheckBox x:Name="chkFinalitzada" Content="Finalitzada" IsChecked="{Binding Finalitzada, Mode=TwoWay}" />
         </StackPanel>
 
